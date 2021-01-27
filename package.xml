@@ -6,7 +6,7 @@
   <description>ROS2 package for converting Twist messages to TwistStamped</description>
   <maintainer email="josh.newans@gmail.com">Josh Newans</maintainer>
   <author email="josh.newans@gmail.com">Josh Newans</author>
-  <license>BSD</license>
+  <license>Apache License 2.0</license>
 
   <!-- <url type="website">http://wiki.ros.org/twist_stamper</url> -->
   <url type="bugtracker">https://github.com/joshnewans/twist_stamper/issues</url>

@@ -16,7 +16,7 @@ setup(
     maintainer='Josh Newans',
     maintainer_email='josh.newans@gmail.com',
     description='ROS2 package for converting Twist messages to TwistStamped',
-    license='BSD',
+    license='Apache License 2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
