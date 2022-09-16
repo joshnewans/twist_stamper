@@ -2,8 +2,8 @@
 Changelog for package twist_stamper
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.3 (2022-09-16)
+------------------
 * fix python setuptools install error (`#1 <https://github.com/joshnewans/twist_stamper/issues/1>`_)
   Co-authored-by: Sönke Niemann <soenke.niemann@ipk.fraunhofer.de>
 * Contributors: niemsoen
