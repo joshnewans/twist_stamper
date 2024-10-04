@@ -52,7 +52,10 @@ def main(args=None):
     rclpy.init(args=args)
 
     twist_stamper = TwistStamper()
-    rclpy.spin(twist_stamper)
+    try:
+        rclpy.spin(twist_stamper)
+    except KeyboardInterrupt:
+        pass
 
     twist_stamper.destroy_node()
     rclpy.shutdown()
