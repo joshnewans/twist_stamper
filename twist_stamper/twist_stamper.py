@@ -58,9 +58,9 @@ def main(args=None):
     try:
         rclpy.spin(twist_stamper)
     except KeyboardInterrupt:
-        print("Recieved keyboard interrupt!")
+        print("Received keyboard interrupt!")
     except ExternalShutdownException:
-        print("Recieved external shutdown request!")
+        print("Received external shutdown request!")
 
     print(f"Exiting...")
 
