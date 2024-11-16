@@ -43,7 +43,10 @@ def main(args=None):
     rclpy.init(args=args)
 
     twist_unstamper = TwistUnstamper()
-    rclpy.spin(twist_unstamper)
+    try:
+        rclpy.spin(twist_unstamper)
+    except KeyboardInterrupt:
+        pass
 
     twist_unstamper.destroy_node()
     rclpy.shutdown()
