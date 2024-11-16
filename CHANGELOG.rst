@@ -2,8 +2,8 @@
 Changelog for package twist_stamper
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.4 (2024-11-16)
+------------------
 * Further improvements to shutdown handling
 * fix(shutdown): clean shutdown on keyboard interrupt (`#6 <https://github.com/joshnewans/twist_stamper/issues/6>`_)
 * Fix deprecation warning (`#3 <https://github.com/joshnewans/twist_stamper/issues/3>`_)
