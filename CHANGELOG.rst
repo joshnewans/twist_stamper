@@ -2,6 +2,13 @@
 Changelog for package twist_stamper
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Further improvements to shutdown handling
+* fix(shutdown): clean shutdown on keyboard interrupt (`#6 <https://github.com/joshnewans/twist_stamper/issues/6>`_)
+* Fix deprecation warning (`#3 <https://github.com/joshnewans/twist_stamper/issues/3>`_)
+* Contributors: Josh Newans, Rein Appeldoorn, Rick-v-E
+
 0.0.3 (2022-09-16)
 ------------------
 * fix python setuptools install error (`#1 <https://github.com/joshnewans/twist_stamper/issues/1>`_)
