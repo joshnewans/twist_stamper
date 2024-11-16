@@ -12,13 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import rclpy
-from rclpy.node import Node
-from rclpy.executors import ExternalShutdownException
 
-from std_msgs.msg import Header
 from geometry_msgs.msg import Twist
 from geometry_msgs.msg import TwistStamped
+
+import rclpy
+from rclpy.executors import ExternalShutdownException
+from rclpy.node import Node
+
+from std_msgs.msg import Header
 
 
 class TwistStamper(Node):
@@ -26,8 +28,8 @@ class TwistStamper(Node):
     def __init__(self):
         super().__init__('twist_stamper')
 
-        self.declare_parameter("frame_id", "")
-        self.frame_id = str(self.get_parameter("frame_id").value)
+        self.declare_parameter('frame_id', '')
+        self.frame_id = str(self.get_parameter('frame_id').value)
 
         self.publisher_ = self.create_publisher(TwistStamped, 'cmd_vel_out', 10)
 
@@ -38,7 +40,7 @@ class TwistStamper(Node):
             10)
         self.subscription  # prevent unused variable warning
 
-        print(f"Started twist_stamper!")
+        print('Started twist_stamper!')
 
     def listener_callback(self, inMsg):
         outMsg = TwistStamped()
@@ -58,11 +60,11 @@ def main(args=None):
     try:
         rclpy.spin(twist_stamper)
     except KeyboardInterrupt:
-        print("Received keyboard interrupt!")
+        print('Received keyboard interrupt!')
     except ExternalShutdownException:
-        print("Received external shutdown request!")
+        print('Received external shutdown request!')
 
-    print(f"Exiting...")
+    print('Exiting...')
 
     twist_stamper.destroy_node()
     rclpy.try_shutdown()
